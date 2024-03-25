@@ -1,0 +1,10 @@
+.Navbar {
+  color: white;
+  font-size: 20px;
+}
+.Navbar .container {
+  padding: 0px 50px;
+}
+.Navbar .container .left img {
+  height: 100px;
+}
