@@ -1,4 +1,4 @@
-.Navbar {
+.navbar {
   width: 100%;
   color: white;
   font-size: 15px;
@@ -7,6 +7,14 @@
   top: 0px;
   z-index: 999;
   background: linear-gradient(to top,transparent 0%, rgb(0,0,0,0.5) 50px);
+  
+  &.scrolled{
+    background-color: var(--main-color);
+
+  }
+  //***&.scrolled is a way to target an element that has both the class scrolled and the parent selector's class(navbar).***
+
+
 
   .container {
     padding: 0px 50px;

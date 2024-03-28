@@ -1,9 +1,22 @@
 import { ArrowDropDown, Notifications, Search } from "@material-ui/icons";
 import "./Navbar.scss";
+import { useState } from "react";
 
 const navbar = () => {
+  const [isScrolled,setisScrolled] = useState(false);
+  window.onscroll= () =>{ 
+    //This attaches an event listener to the onscroll event of the window. When the user  scrolls the window, the arrow function is invoked.
+    
+    setisScrolled(window.scrollY === 0 ? false : true );
+     //vertical scroll position of the window (window.scrollY). If the scroll position is 0, indicating that the top of the page is visible, isScrolled is set to false. Otherwise, it's set to true.
+
+    return () => (window.onscroll= null);
+    //This line returns a cleanup function that removes the event listener for the onscroll event when the component is unmounted. It ensures that there are no memory leaks or unnecessary event listeners after the component is removed from the DOM.
+  };
+
+
   return (
-    <div className="Navbar">
+    <div className={isScrolled ? "navbar scrolled" : "navbar"}>
       <div className="container">
         <div className="left">
           <img src="https://upload.wikimedia.org/wikipedia/commons/7/7a/Logonetflix.png" />
