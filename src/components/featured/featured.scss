@@ -2,7 +2,29 @@
     height: 95vh;
     width: 230vh;
     position: relative;
-}
+    //{type && (: This is a conditional rendering statement.  Here, it checks if the type variable has a truthy value (i.e., not null, undefined, 0, false, or an empty string). If type is truthy, it proceeds with rendering the following JSX.
+    .category{
+        position: absolute;
+        top: 90px;
+        left: 60px;
+        font-size: 30px;
+        font-weight: 450;
+        color: aliceblue;
+        display: flex;
+        align-items: center;
+        // <select> element use to create a dropdown list
+        select{
+            cursor: pointer;
+            background-color: var(--main-color);
+            padding: 5px;
+            border: 1px solid white;
+            color: aliceblue;
+            margin-left: 50px;
+        }
+    }
+
+    }
+
 img{
     
     width: 100%;
