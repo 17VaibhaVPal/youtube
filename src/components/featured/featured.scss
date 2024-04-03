@@ -42,12 +42,14 @@ img{
     bottom: 100px;
     color:white;
     img{
-        width: 350px;
+        width: 400px;
+        mix-blend-mode: color-burn;// IMPORTANT property
+        
     }
     .description{
-        margin:20px 0px;
+        margin:10px 0px;
         justify-content:space-evenly;
-        font-size: 16px;
+        font-size: 15px;
             }
 }
 .buttons{
