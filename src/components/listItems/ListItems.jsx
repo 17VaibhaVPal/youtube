@@ -4,7 +4,7 @@ import { useState } from "react"
 
 export default function ListItems() {
   const [isHovered,SetIsHovered] = useState(false);
-  const trailer = "https://download-video.akamaized.net/v3-1/download/b83f061f-0844-4c6f-9f82-28f01fed220a/48d69ced-266fdd5d/bmV3X3JlY29yZGluZ18tXzRfNF8yMDI0LF8xMDozMDozNl9hbSAoMzYwcCkubXA0?__token__=st=1712207779~exp=1712222179~acl=%2Fv3-1%2Fdownload%2Fb83f061f-0844-4c6f-9f82-28f01fed220a%2F48d69ced-266fdd5d%2FbmV3X3JlY29yZGluZ18tXzRfNF8yMDI0LF8xMDozMDozNl9hbSAoMzYwcCkubXA0%2A~hmac=a7e7e259c92ec3fec3dc18ceae435a79e33d2687bd156301ed6b2d29e057b262&r=dXMtZWFzdDE%3D";
+  const trailer = "https://player.vimeo.com/progressive_redirect/download/930519215/container/b83f061f-0844-4c6f-9f82-28f01fed220a/48d69ced-266fdd5d/new_recording_-_4_4_2024,_10:30:36_am%20%28360p%29.mp4?expires=1712252400&loc=external&signature=41b6b2a2b81749552c645c3980b6c50297026a0f75f56c4d9e711d327df86e52";
   
   
   return (
@@ -20,10 +20,10 @@ export default function ListItems() {
 
         <div className="itemInfo">
           <div className="icons">
-            <PlayArrow/>
-            <Add/>
-            <ThumbUpAltOutlined/>
-            <ThumbDownAltOutlined/>
+            <PlayArrow className="icon" />
+            <Add className="icon"/>
+            <ThumbUpAltOutlined className="icon"/>
+            <ThumbDownAltOutlined className="icon"/>
           </div>
           <div className="ItemInfoTop">
             <span>1 hour 14 mins</span>
