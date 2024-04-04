@@ -1,6 +1,6 @@
 .listItems{
     width: 225px;
-    height: 220px;
+    height: 250px;
     background-color: var(--main-color);
     margin-right: 5px;
     overflow: hidden;
@@ -8,20 +8,29 @@
     color: aliceblue;
     
     img{
-        width: 90%;
-        height: 90%;
+        width: 100%;
+        height: 100%;
+        object-fit:cover;
+    }
+    video{
+        width: 100%;
+        height: 190px;
         object-fit: cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+
     }
     &:hover{
         width: 325px;
-        height: 380px;
-        position: absolute;
-        top: -80px;
+        height: 300px;
+        position:relative;
+        top: -100px;
         //Box shadow CSS generator>>>
         -webkit-box-shadow: 5px 5px 36px 23px rgba(255,251,252,0.29); 
         box-shadow: 5px 5px 36px 23px rgba(255,251,252,0.29);
         img{
-            height: 170px;
+            height: 150px;
         }
        
        
