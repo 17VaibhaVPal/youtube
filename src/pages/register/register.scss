@@ -11,27 +11,31 @@
    
 
 .top{
-    .wrapper{
-
+    .wrapper {
+        z-index:999;
         padding: 20px 60px;
         display: flex;
-        align-items:center;
-        justify-content:space-between;
-
-        .logo{
-            height: 40px;
+        align-items: center;
+        justify-content: space-between;
+    
+        .logo {
+            height: 80px;
+            width:auto;
         }
-        .LoginButton{
+    
+        .LoginButton {
+            z-index:999;
+
             background-color: rgb(252, 10, 10);
             border-radius: 15px;
             cursor: pointer;
-            color:aliceblue;
+            color: aliceblue;
             padding: 5px 25px;
             font-size: 10px;
             font-weight: 600;
-            
         }
-      
+    }
+    
 }
 
 }
@@ -54,6 +58,7 @@
         margin-top: 20px;
     }
     p{
+        margin-top: 10px;
         font-size: 20px;
     }
     .input{
@@ -84,4 +89,4 @@
     }
 }
 
-}
+

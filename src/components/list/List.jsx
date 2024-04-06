@@ -39,10 +39,10 @@ export default function List() {
   return (
     <div className="list">
         <span className="listTitle">Continue to Watch</span>
-        <div className="wrapper">
+        <div className="wrapperi">
             <ArrowBackIosOutlined className="SliderArrow left" onClick={()=>handleClick("left")}
             style={{display: !isMoved && "none"}}/>
-            <div className="container" ref={listRef}>
+            <div className="containeri" ref={listRef}>
                 <ListItem index={0}/>
                 <ListItem index={1}/>
                 <ListItem index={2}/>
