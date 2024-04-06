@@ -4,7 +4,7 @@ import { useState } from "react"
 
 export default function ListItems() {
   const [isHovered,SetIsHovered] = useState(false);
-  const trailer = "https://player.vimeo.com/progressive_redirect/download/930519215/container/b83f061f-0844-4c6f-9f82-28f01fed220a/48d69ced-266fdd5d/new_recording_-_4_4_2024,_10:30:36_am%20%28360p%29.mp4?expires=1712254224&loc=external&signature=509c44db0ba5366f902f0c8adaaa1cc9dde1dbb606553c1cd645aa5de7ca6e7e";
+  const trailer = "https://player.vimeo.com/progressive_redirect/download/930519215/container/b83f061f-0844-4c6f-9f82-28f01fed220a/1bfd4ab4-266fdd5d/new_recording_-_4_4_2024,_10:30:36_am%20%28720p%29.mp4?expires=1712256045&loc=external&signature=0f8ffaae0909601c98d2a59cfeee28d4a353a1b5834836c2f0a461ce8f09d25f";
   
   
   return (
